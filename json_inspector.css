@@ -1,0 +1,139 @@
+#json_inspector_infobar,
+#json_inspector {
+    font-family: helvetica, arial, sans-serif;
+    font-size: small;
+    border: 0;
+    margin: 20px;
+}
+#json_inspector span.comma, #json_inspector .separator, #json_inspector .null {
+    color: #999;
+}
+#json_inspector td { vertical-align: top; }
+#json_inspector td.key { text-align: right; }
+#json_inspector .separator {
+    padding: 0 5px;
+}
+#json_inspector .key { color: #333; }
+#json_inspector .string { color: green; }
+#json_inspector .number { color: red; }
+#json_inspector .boolean { color: blue; }
+#json_inspector .null { font-style: italic; }
+#json_inspector tr { 
+    padding: 0; 
+    margin: 3px; 
+    list-style-type: none;
+}
+#json_inspector div {
+    position: relative;
+}
+#json_inspector div.visible {
+    background: #fff;
+    border: 1px solid #ddd; 
+    border-color: #ddd #d1d1d1 #d1d1d1 #ddd;
+    padding: 5px 35px 5px 10px;
+    margin: 0px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: #EDE 5px 5px 15px;
+}
+#json_inspector > div.visible {
+    padding-top: 15px;
+    padding-left: 5px;
+}
+body.json_inspector_body {
+    background: #ededed;
+    margin: 0;
+}
+#json_inspector div.hidden { border: 0; }
+#json_inspector table { 
+    background: #fff;
+    font-size: 12px;
+}
+#json_inspector_infobar a,
+#json_inspector a { color: blue; font-size: small;}
+#json_inspector .collapsed {
+    font-size: small;
+    color: #666;
+    text-decoration: none;
+}
+#json_inspector .showlink:hover { text-decoration: underline; }
+#json_inspector .visible > .collapsed,
+#json_inspector .hidden > table,
+#json_inspector .visible > .showlink,
+#json_inspector .hidden > .hidelink { 
+    display: none; 
+}
+#json_inspector .hidden > .collapsed, 
+#json_inspector .hidden > .showlink,
+#json_inspector .visible > .hidelink {
+    display: inline; 
+}
+#json_inspector .hidelink { 
+    font-size: 12px;
+    position: absolute; 
+    right: 5px; 
+    top: 3px; 
+}
+#json_inspector .visible > table { display: block; }
+#json_inspector div.error {
+    padding: 20px;
+}
+#json_inspector div.error strong, 
+#json_inspector div.error strong a {
+    font-size: 20px;
+}
+#json_inspector_infobar {
+    background: #FDFF4F;
+    border-bottom: 1px solid orange;
+    color: #ddd;
+    margin: 0;
+    padding: 0 10px;
+    -webkit-box-shadow: 0px 1px 10px orange;
+}
+#json_inspector_infobar textarea {
+    display: none;
+    height: 100px;
+    margin: 10px 0;
+    width: 100%;
+}
+#json_inspector_infobar .turn_off_copy,
+#json_inspector_infobar.copy_on .turn_on_copy {
+    display: none;
+}
+#json_inspector_infobar.copy_on .turn_off_copy {
+    display: inline;
+}
+#json_inspector_infobar.copy_on textarea {
+    display: block;
+}
+#json_inspector_infobar table {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+    width: 100%;
+}
+#json_inspector_infobar table a {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 15px;
+}
+#json_inspector_infobar #infobar_controls {
+    text-align: right;
+}
+#json_inspector_infobar #json_inspector_logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-text-stroke: 2px orange;
+}
+#json_inspector_infobar table span { font-weight: normal; font-size: 10px; }
+#json_inspector_infobar td { color: #333; }
+#json_inspector div.error textarea {
+    height: 400px;
+    width: 100%;
+    margin: 10px 0;
+}
+#json_inspector .json_inspector_timing {
+    color: #999;
+    margin-left: 10px;
+}

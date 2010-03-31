@@ -1,0 +1,12 @@
+{
+    "name": "JSON Inspector",
+    "version": "1.3",
+    "description": "Inspect JSON in your browser, pretty-printed and color-coded.",
+    "permissions": ["tabs"],
+    "content_scripts": [{
+        "matches": ["http://*/*", "http://*/*.json"],
+        "js": ["json_inspector.js"],
+        "css": ["json_inspector.css"],
+        "all_frames": true
+    }]
+}
