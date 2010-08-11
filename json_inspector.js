@@ -3,12 +3,10 @@ var JSON_INSPECTOR = new function() {
     var url = document.location.href;
     var disabled = url.match(/disable_json_inspector/); // append #disable_json_inspector to the url to switch it off
     var force_enable = url.match(/enable_json_inspector/); // append #enable_json_inspector to the url to switch it on
-    alert(force_enable);
     var url_regexes = [/\.json/, /json$/, /\/json\//, /=json/];
     var url_matches;
     for (var i=0, re;re=url_regexes[i];i++) { if (!disabled && url.match(re)) { url_matches = true; } }
     if (url_matches || force_enable) {
-    alert(force_enable);
         if (document.body.innerHTML.replace(/[\n\r\t ]/g, '')[0]=='<') { return false; }
         var json_str = document.body.innerText;
         document.getElementsByTagName('body')[0].className="json_inspector_body";
